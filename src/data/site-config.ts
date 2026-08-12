@@ -6,14 +6,14 @@ const siteConfig: SiteConfig = {
     website: 'https://example.com',
     avatar: {
         src: avatar,
-        alt: 'Ethan Donovan'
+        alt: 'red panda'
     },
-    title: 'Dante',
-    subtitle: 'Minimal Astro.js theme',
-    description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
+    title: 'Chia Sin Liew',
+    subtitle: 'Bioinformatics & Multi-Omics',
+    description: 'Portfolio and research showcase of Chia Sin Liew, Ph.D. — expertise in bioinformatics, specializing in high-dimensional multi-omics, single-cell analysis, and scalable, reproducible pipelines.',
     image: {
-        src: '/dante-preview.jpg',
-        alt: 'Dante - Astro.js and Tailwind CSS theme'
+        src: '',
+        alt: ''
     },
     headerNavLinks: [
         {
@@ -21,56 +21,40 @@ const siteConfig: SiteConfig = {
             href: '/'
         },
         {
-            text: 'Projects',
-            href: '/projects'
+            text: 'Research & Projects',
+            href: '/research'
         },
         {
             text: 'Blog',
             href: '/blog'
-        },
-        {
-            text: 'Tags',
-            href: '/tags'
         }
     ],
     footerNavLinks: [
         {
-            text: 'About',
-            href: '/about'
+            text: 'Home',
+            href: '/'
         },
         {
             text: 'Contact',
             href: '/contact'
-        },
-        {
-            text: 'Terms',
-            href: '/terms'
-        },
-        {
-            text: 'Download theme',
-            href: 'https://github.com/JustGoodUI/dante-astro-theme'
         }
     ],
     socialLinks: [
         {
-            text: 'Dribbble',
-            href: 'https://dribbble.com/'
+            text: 'GitHub',
+            href: 'https://github.com/chiasinl'
         },
         {
-            text: 'Instagram',
-            href: 'https://instagram.com/'
-        },
-        {
-            text: 'X/Twitter',
-            href: 'https://twitter.com/'
+            text: 'LinkedIn',
+            href: 'https://linkedin.com/in/chia-sin-liew'
         }
     ],
     hero: {
-        title: 'Hi There & Welcome to My Corner of the Web!',
-        text: "I'm **Ethan Donovan**, a web developer at Amazing Studio, dedicated to the realms of collaboration and artificial intelligence.\nMy approach involves embracing intuition, conducting just enough research, and leveraging aesthetics as a catalyst for exceptional products.\nI have a profound appreciation for top-notch software, visual design, and the principles of product-led growth.\n\nFeel free to explore some of my coding endeavors on [GitHub](https://github.com/JustGoodUI/dante-astro-theme) or follow me on [Twitter/X](https://twitter.com/justgoodui).",
+        title: 'Chia Sin Liew, Ph.D. — Computational Biology & Multi-Omics Research',
+        text: "I'm **Chia Sin Liew**, a computational biologist at the University of Nebraska–Lincoln Bioinformatics Core.\nI bridge wet- and dry-lab research by translating complex multi-omics, single-cell, transcriptomic, and metagenomic datasets into actionable biological insights.\nGuided by scientific rigor and effective cross-disciplinary communication, I develop tailored solutions—including custom analytical workflows—to address unique research challenges.\n\nFeel free to connect with me on [LinkedIn](https://linkedin.com/in/chia-sin-liew).",
         image: {
             src: hero,
-            alt: 'A person sitting at a desk in front of a computer'
+            alt: 'A person standing in front of a lake'
         },
         actions: [
             {
@@ -80,7 +64,7 @@ const siteConfig: SiteConfig = {
         ]
     },
     subscribe: {
-        enabled: true,
+        enabled: false,
         title: 'Subscribe to Dante Newsletter',
         text: 'One update per week. All the latest posts directly in your inbox.',
         form: {

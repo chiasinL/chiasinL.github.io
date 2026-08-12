@@ -1,0 +1,295 @@
+[
+    {
+        "title": "Understanding Rice Responses to the Combination of Bacterial Panicle Blight and High Night Temperatures",
+        "authors": [
+            "Sapana Ghimire",
+            "Shilu Dahal",
+            "Chia-Sin Liew",
+            "Laura Ortega",
+            "Jean-Jack M. Riethoven",
+            "Kumar Shrestha",
+            "Clemencia M. Rojas"
+        ],
+        "journal": "Rice",
+        "year": "2026",
+        "doi": "https://doi.org/10.1186/s12284-026-00899-4",
+        "isFeatured": false
+    },
+    {
+        "title": "BMX-001 acts as a selective chemoradioprotector in rectal cancer",
+        "authors": [
+            "Molly S Myers",
+            "Elizabeth A Kosmacek",
+            "Chia Sin Liew",
+            "Arpita Chatterjee",
+            "Melinda Wojtkiewicz",
+            "Pooja Roy",
+            "R Katherine Hyde",
+            "Punita Dhawan",
+            "Ivan Spasojevic",
+            "Shuo Wang",
+            "Kyle J Hewitt",
+            "Cristina M Furdui",
+            "Rebekah L Gundry",
+            "Jean-Jack M. Riethoven",
+            "Chi Lin",
+            "Rebecca E Oberley-Deegan"
+        ],
+        "journal": "Redox Biochem Chem.",
+        "year": "2026",
+        "doi": "https://doi.org/10.1016/j.rbc.2026.100074",
+        "isFeatured": false
+    },
+    {
+        "title": "BMX-001, a clinically relevant radioprotector, can reverse radiation-induced fibrosis when given three weeks after radiation, in part, by restoring methylation",
+        "authors": [
+            "Molly S Myers",
+            "Elizabeth A Kosmacek",
+            "Chia Sin Liew",
+            "Alexander J. Lushnikov",
+            "Arpita Chatterjee",
+            "Luis A. Marky",
+            "Jean-Jack M. Riethoven",
+            "Rebecca E Oberley-Deegan"
+        ],
+        "journal": "Redox Biology",
+        "year": "2026",
+        "doi": "https://doi.org/10.1016/j.redox.2026.104020",
+        "isFeatured": true,
+        "description": "Analyzed bisulfite and RNA-seq data to characterize epigenetic and transcriptomic changes associated with BMX-001's ability to reverse radiation-induced fibrosis; generated manuscript figures and contributed to writing."
+    },
+    {
+        "title": "Challenges and opportunities: computational biology and the future of agriculture",
+        "authors": [
+            "Joao Carlos Gomes-Neto",
+            "Alexandra Crook",
+            "Rachel Hestrin",
+            "Guoming Li",
+            "Chia-Sin Liew",
+            "Guilherme Rosa",
+            "Keshav D Singh",
+            "Christopher K Tuggle",
+            "Katie L Summers",
+            "Camilo Valdes",
+            "Noah Fahlgren",
+            "Jennifer Clarke"
+        ],
+        "journal": "Bioinformatics Advances",
+        "year": "2026",
+        "doi": "https://doi.org/10.1093/bioadv/vbag003",
+        "isFeatured": true,
+        "description": "Contributed perspective on agricultural genetics, genomics, and epigenetics—focusing on the importance of quality genomes, annotations and associated databases, bioinformatics tools, and training the next generation of scientists."
+    },
+    {
+        "title": "Dietary dipeptide γ-glutamyl valine (γ-ev) activates AMPK and improves glucose homeostasis in db/db mice",
+        "authors": [
+            "Bikram Upadhyaya",
+            "Chia-Sin Liew",
+            "Jean-Jack M. Riethoven",
+            "Yoshinori Mine",
+            "Kaustav Majumder"
+        ],
+        "journal": "The Journal of Nutritional Biochemistry",
+        "year": "2025",
+        "doi": "https://doi.org/10.1093/bioadv/vbag003",
+        "isFeatured": true,
+        "description": "Led the analysis of RNA-seq data to identify differentially expressed genes and pathways associated with diabetes and fatty acid metabolism in the liver and the jejunum."
+    },
+    {
+        "title": "Genome structure and evolutionary history of frankincense producing <i>Boswellia sacra</i>",
+        "authors": [
+            "Abdul Latif Khan",
+            "Ahmed Al-Harrasi",
+            "Jin-Peng Wang",
+            "Sajjad Asaf",
+            "Jean-Jack M. Riethoven",
+            "Tariq Shehzad",
+            "Chia-Sin Liew",
+            "Xiao-Ming Song",
+            "Daniel P. Schachtman",
+            "Chao Liu",
+            "Ji-Gao Yu",
+            "Zhi-Kang Zhang",
+            "Fan-Bo Meng",
+            "Jia-Qing Yuan",
+            "Chen-dan Wei",
+            "He Guo",
+            "Xuewen Wang",
+            "Ahmed Al-Rawahi",
+            "In-Jung Lee",
+            "Jeffrey L. Bennetzen",
+            "Xi-Yin Wang"
+        ],
+        "journal": "iScience",
+        "year": "2022",
+        "doi": "https://doi.org/10.1016/j.isci.2022.104574",
+        "isFeatured": true,
+        "description": "Assembled the first genome in the genus <i>Boswellia</i> using short- and long-read sequencing data, and performed genome annotation for downstream comparative genomics and evolutionary analyses."
+    },
+    {
+        "title": "The third international hackathon for applying insights into large-scale genomic composition to use cases in a wide range of organisms",
+        "authors": [
+            "Kimberly Walker",
+            "Divya Kalra",
+            "Rebecca Lowdon",
+            "Guangyi Chen",
+            "David Molik",
+            "Daniela C Soto",
+            "Fawaz Dabbaghie",
+            "Ahmad Al Khleifat",
+            "Medhat Mahmoud",
+            "Luis F Paulin",
+            "Muhammad Sohail Raza",
+            "Susanne P Pfeifer",
+            "Daniel Paiva Agustinho",
+            "Elbay Aliyev",
+            "Pavel Avdeyev",
+            "Enrico R Barrozo",
+            "Sairam Behera",
+            "Kimberley Billingsley",
+            "Li Chuin Chong",
+            "Deepak Choubey",
+            "Wouter De Coster",
+            "Yilei Fu",
+            "Alejandro R Gener",
+            "Timothy Hefferon",
+            "David Morgan Henke",
+            "Wolfram Höps",
+            "Anastasia Illarionova",
+            "Michael D Jochum",
+            "Maria Jose",
+            "Rupesh K Kesharwani",
+            "Sree Rohit Raj Kolora",
+            "Jędrzej Kubica",
+            "Priya Lakra",
+            "Damaris Lattimer",
+            "Chia-Sin Liew",
+            "Bai-Wei Lo",
+            "Chunhsuan Lo",
+            "Anneri Lötter",
+            "Sina Majidian",
+            "Suresh Kumar Mendem",
+            "Rajarshi Mondal",
+            "Hiroko Ohmiya",
+            "Nasrin Parvin",
+            "Carolina Peralta",
+            "Chi-Lam Poon",
+            "Ramanandan Prabhakaran",
+            "Marie Saitou",
+            "Aditi Sammi",
+            "Philippe Sanio",
+            "Nicolae Sapoval",
+            "Najeeb Syed",
+            "Todd Treangen",
+            "Gaojianyong Wang",
+            "Tiancheng Xu",
+            "Jianzhi Yang",
+            "Shangzhe Zhang",
+            "Weiyu Zhou",
+            "Fritz J Sedlazeck",
+            "Ben Busby"
+        ],
+        "journal": "F1000Research",
+        "year": "2022",
+        "doi": "https://doi.org/10.12688/f1000research.110194.1",
+        "isFeatured": false
+    },
+    {
+        "title": "<i>Senecio pokohinuensis</i> (Asteraceae), a new combination for an endemic species of Mokohinau Islands, Hauraki Gulf (Tikapa Moana o Hauraki), northern Te Ika a Maui/North Island, Aotearoa/New Zealand",
+        "authors": [
+            "Peter James de Lange",
+            "Pieter B. Pelser",
+            "Chia-Sin Liew",
+            "Andrew Marshall"
+        ],
+        "journal": "Ukrainian Botanical Journal",
+        "year": "2022",
+        "doi": "https://doi.org/10.15407/ukrbotj79.125",
+        "isFeatured": false
+    },
+    {
+        "title": "Porcine Reproductive and Respiratory Syndrome Virus Infection Upregulates Negative Immune Regulators and T-Cell Exhaustion Markers",
+        "authors": [
+            "Jayeshbhai Chaudhari",
+            "Chia-Sin Liew",
+            "Jean-Jack M. Riethoven",
+            "Sarah Sillman",
+            "Hiep L. X. Vu"
+        ],
+        "journal": "Journal of Virology",
+        "year": "2021",
+        "doi": "https://doi.org/10.1128/jvi.01052-21",
+        "isFeatured": true,
+        "description": "Led the analysis of RNA-seq data to understand the host immune response to Porcine Reproductive and Respiratory Syndrome Virus (PRRSV) infection, and identified upregulation of negative immune regulators and T-cell exhaustion markers."
+    },
+    {
+        "title": "Taxonomic realignment of <i>Senecio glaucophyllus</i> (Asteraceae; Senecioneae) necessitates a new name for a widespread New Zealand species",
+        "authors": [
+            "Chia-Sin Liew",
+            "Shannel P. Courtney",
+            "Peter J. de Lange",
+            "Pieter B. Pelser"
+        ],
+        "journal": "New Zealand Journal of Botany",
+        "year": "2021",
+        "doi": "https://doi.org/10.1080/0028825X.2020.1866030",
+        "isFeatured": true,
+        "description": "Reclassified a New Zealand <i>Senecio</i> species as <i>Senecio matatini</i> using phylogenetic analyses of nuclear and plastid DNA sequences alongside random forest analysis of morphological data."
+    },
+    {
+        "title": "Host Transcriptional Response to Persistent Infection with a Live-Attenuated Porcine Reproductive and Respiratory Syndrome Virus Strain",
+        "authors": [
+            "Jayeshbhai Chaudhari",
+            "Chia-Sin Liew",
+            "Aspen M Workman",
+            "Jean-Jack M. Riethoven",
+            "David Steffen",
+            "Sarah Sillman",
+            "Hiep L X Vu"
+        ],
+        "journal": "Viruses",
+        "year": "2020",
+        "doi": "https://doi.org/10.3390/v12080817",
+        "isFeatured": false
+    },
+    {
+        "title": "The delimitation and evolutionary history of the Australasian Lautusoid group of <i>Senecio</i> (Asteraceae; Senecioneae)",
+        "authors": [
+            "Chia-Sin Liew",
+            "Andrew E. Memory",
+            "Daniel Ortiz-Barrientos",
+            "Peter J. de Lange",
+            "Pieter B. Pelser"
+        ],
+        "journal": "Taxon",
+        "year": "2018",
+        "doi": "https://doi.org/10.12705/671.8",
+        "isFeatured": false
+    },
+    {
+        "title": "<i>Senecio esperensis</i> (Asteraceae: Senecioneae)—a new combination for the L’Esperance Rock groundsel, Kermadec Islands",
+        "authors": [
+            "Peter J. de Lange",
+            "Chia Sin Liew",
+            "Jeremy R Rolfe",
+            "Pieter B. Pelser"
+        ],
+        "journal": "New Zealand Journal of Botany",
+        "year": "2015",
+        "doi": " https://doi.org/10.1080/0028825X.2015.1039552",
+        "isFeatured": false
+    },
+    {
+        "title": "<i>Senecio australis</i> Willd. (Asteraceae: Senecioneae) – a new and uncommon addition to the indigenous vascular flora of New Zealand",
+        "authors": [
+            "Peter J. de Lange",
+            "Jeremy R Rolfe",
+            "Chia-Sin Liew",
+            "Pieter B. Pelser"
+        ],
+        "journal": "New Zealand Journal of Botany",
+        "year": "2014",
+        "doi": " https://doi.org/10.1080/0028825X.2014.973421",
+        "isFeatured": false
+    }
+]

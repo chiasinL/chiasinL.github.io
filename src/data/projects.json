@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Single-Cell & Single-Nuclear RNA-Seq Framework",
+        "description": "Standardized bioinformatic processing workflow for core facility clients of 10x Genomics data, covering the Cell Ranger pipeline, including alignment and quantification, ambient RNA removal, doublet/multiplet detection, quality control, filtering, clustering, and automated cell-type annotation.",
+        "tags": [
+            "RNA-seq",
+            "Single-Cell",
+            "Cell Ranger",
+            "CellBender",
+            "DoubletFinder",
+            "Seurat",
+            "SingleR",
+            "R",
+            "Python",
+            "HPC / SLURM",
+            "Snakemake"
+        ]
+    },
+    {
+        "title": "Bulk RNA-Seq Processing and Quantification Workflow",
+        "description": "Scalable Snakemake workflow for transcriptomics data transcript- and gene-level profiling, as well as QC statistics at various stages of the workflow.",
+        "tags": [
+            "RNA-seq",
+            "STAR",
+            "Salmon",
+            "DESeq2",
+            "R",
+            "Python",
+            "HPC / SLURM",
+            "Snakemake"
+        ]
+    },
+    {
+        "title": "Automated Reporting & Visualization Framework",
+        "description": "Automated report generation using outputs from the above RNA-Seq workflows to visualize key findings such as clustering patterns, cell-type annotations, and differentially expressed genes. Built with Quarto to deliver presentation-ready visualizations and interactive tables.",
+        "tags": [
+            "HTML Report Generation",
+            "Quarto",
+            "Data Visualization",
+            "Multi-Omics"
+        ]
+    },
+    {
+        "title": "Microbiome Amplicon Sequence Processing Workflow",
+        "description": "Scalable microbiome amplicon sequence processing workflow for 16S rRNA and ITS amplicon sequencing data, including quality control, denoising, taxonomic assignment, and phylogeny reconstruction.",
+        "tags": [
+            "Microbiome Amplicon Sequencing",
+            "DADA2",
+            "MAFFT",
+            "Phyloseq",
+            "R",
+            "HPC / SLURM",
+            "Snakemake"
+        ]
+    }
+]

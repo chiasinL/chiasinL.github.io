@@ -1,0 +1,76 @@
+---
+import rssParser from 'rss-parser';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Replace with your actual Substack RSS feed URL once created (e.g., 'https://chiasinliew.substack.com/feed')
+const SUBSTACK_FEED_URL = 'https://chiasinliew.substack.com/feed';
+
+const parser = new rssParser();
+let posts: Array<{ title: string; link: string; description: string; pubDate: string }> = [];
+
+// Only attempt to parse if a valid feed URL is configured
+if (SUBSTACK_FEED_URL && !SUBSTACK_FEED_URL.includes('yourname')) {
+  try {
+    const feed = await parser.parseURL(SUBSTACK_FEED_URL);
+    posts = feed.items.slice(0, 10).map((item) => ({
+      title: item.title || 'Untitled',
+      link: item.link || '#',
+      description: item.contentSnippet ? item.contentSnippet.slice(0, 180) + '...' : '',
+      pubDate: item.pubDate
+        ? new Date(item.pubDate).toLocaleDateString('en-US', {
+            month: 'short',
+            day: 'numeric',
+            year: 'numeric',
+          })
+        : '',
+    }));
+  } catch (error) {
+    // If Substack isn't set up or feed isn't live yet, fail gracefully to fallback UI
+    console.warn('Substack RSS Feed inactive or unreachable. Rendering fallback block.');
+  }
+}
+---
+
+<BaseLayout description="Articles on computational biology, pipeline engineering, and technical workflows.">
+  <div class="mb-16 sm:mb-24">
+    <h1 class="mb-8 font-serif text-2xl font-medium sm:text-3xl">Writing</h1>
+
+    {posts.length > 0 ? (
+      /* Live Substack Feed UI */
+      <div class="space-y-10">
+        {posts.map((post) => (
+          <article class="group">
+            <a href={post.link} target="_blank" rel="noopener noreferrer" class="block">
+              {post.pubDate && <p class="text-xs text-neutral-500 mb-1">{post.pubDate}</p>}
+              <h2 class="font-serif text-xl font-medium group-hover:underline group-hover:decoration-dashed group-hover:underline-offset-4">
+                {post.title} ↗
+              </h2>
+              {post.description && (
+                <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                  {post.description}
+                </p>
+              )}
+            </a>
+          </article>
+        ))}
+      </div>
+    ) : (
+      /* Pre-Launch Fallback UI */
+      <div class="space-y-6 max-w-xl">
+        <p class="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
+          Articles on computational biology and technology will be published periodically on Substack.
+        </p>
+        <div>
+          <a
+            href="https://substack.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block px-4 py-2 text-sm italic border border-neutral-800 dark:border-neutral-200 rounded-full hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
+          >
+            Substack Channel Launching Soon ↗
+          </a>
+        </div>
+      </div>
+    )}
+  </div>
+</BaseLayout>

@@ -1,18 +1,42 @@
 ---
-import { getCollection } from 'astro:content';
+import RSSParser from 'rss-parser';
 import Button from '../components/Button.astro';
 import Hero from '../components/Hero.astro';
-import PostPreview from '../components/PostPreview.astro';
 import ProjectPreview from '../components/ProjectPreview.astro';
 import siteConfig from '../data/site-config';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { sortItemsByDateDesc } from '../utils/data-utils';
 
-const posts = (await getCollection('blog')).sort(sortItemsByDateDesc);
-const featuredPosts = posts.filter(({ data }) => data.isFeatured);
+// 1. Load Projects from JSON (Top 3)
+import projects from '../data/projects.json';
+// Slice the array to get only the first 3 projects
+const featuredProjects = projects.slice(0, 3);
 
-const projects = (await getCollection('projects')).sort(sortItemsByDateDesc);
-const featuredProjects = projects.filter(({ data }) => data.isFeatured);
+// 2. Substack Feed Configuration
+// Replace with your actual Substack URL once live (e.g., 'https://chiasinliew.substack.com/feed')
+const SUBSTACK_FEED_URL = 'https://chiasinliew.substack.com/feed';
+
+let featuredPosts: Array<{ title: string; link: string; description: string; pubDate: string }> = [];
+
+if (SUBSTACK_FEED_URL && !SUBSTACK_FEED_URL.includes('yourname')) {
+    try {
+        const parser = new RSSParser();
+        const feed = await parser.parseURL(SUBSTACK_FEED_URL);
+        featuredPosts = feed.items.slice(0, 3).map((item: any) => ({
+            title: item.title || 'Untitled',
+            link: item.link || '#',
+            description: item.contentSnippet ? item.contentSnippet.slice(0, 160) + '...' : '',
+            pubDate: item.pubDate
+                ? new Date(item.pubDate).toLocaleDateString('en-US', {
+                      month: 'short',
+                      day: 'numeric',
+                      year: 'numeric',
+                  })
+                : '',
+        }));
+    } catch (error) {
+        // Fallback gracefully if Substack is not active yet
+    }
+}
 ---
 
 <BaseLayout description={siteConfig.description}>
@@ -20,27 +44,54 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
     {
         featuredProjects?.length > 0 && (
             <div class="mb-16 sm:mb-24">
-                <h2 class="mb-12 font-serif text-xl italic sm:mb-16 sm:text-2xl">Projects</h2>
+                <h2 class="mb-12 font-serif text-xl italic sm:mb-16 sm:text-2xl">Research & Projects</h2>
                 {featuredProjects.map((project) => (
                     <ProjectPreview project={project} class="mb-10 sm:mb-12" headingLevel="h3" />
                 ))}
                 <div class="mt-12 sm:mt-16">
-                    <Button href="/projects">View All Projects</Button>
+                    <Button href="/research">View All Research & Projects</Button>
                 </div>
             </div>
         )
     }
+
+    {/* Writing Section */}
+    <div class="mb-16 sm:mb-24">
+        <h2 class="mb-12 font-serif text-xl italic sm:mb-16 sm:text-2xl">Writing</h2>
     {
-        featuredPosts?.length > 0 && (
-            <div class="mb-16 sm:mb-24">
-                <h2 class="mb-12 font-serif text-xl italic sm:mb-16 sm:text-2xl">Writing</h2>
-                {featuredPosts.map((post) => (
-                    <PostPreview post={post} class="mb-10 sm:mb-12" headingLevel="h3" />
-                ))}
-                <div class="mt-12 sm:mt-16">
-                    <Button href="/blog">View All Posts</Button>
+            featuredPosts.length > 0 ? (
+                <>
+                    {featuredPosts.map((post) => (
+                        <a 
+                            href={post.link} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="group mb-10 block sm:mb-12"
+                        >
+                            <h3 class="font-serif text-xl font-medium leading-tight group-hover:underline group-hover:decoration-dashed group-hover:decoration-1 group-hover:underline-offset-4 sm:text-2xl">
+                                {post.title} ↗
+                            </h3>
+                            {post.description && (
+                                <p class="mt-1 text-sm leading-normal text-neutral-600 dark:text-neutral-400">
+                                    {post.description}
+                                </p>
+                            )}
+                        </a>
+                    ))}
+                    <div class="mt-12 sm:mt-16">
+                        <Button href="/blog">View All Posts</Button>
+                    </div>
+                </>
+            ) : (
+                <div class="max-w-xl space-y-6">
+                    <p class="text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                        Articles on computational biology and technology will be published periodically on Substack.
+                    </p>
+                    <div>
+                        <Button href="/blog">Substack Channel Launching Soon</Button>
+                    </div>
                 </div>
-            </div>
-        )
-    }
+            )
+        }
+    </div>
 </BaseLayout>
