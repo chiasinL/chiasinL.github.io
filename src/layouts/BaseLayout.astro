@@ -22,14 +22,32 @@ const { showHeader = true, ...head } = Astro.props;
         <ClientRouter />
         <script is:inline src="/theme-toggle.js"></script>
 
-        <!-- GoatCounter Analytics -->
+        <!-- GoatCounter Analytics for Astro View Transitions -->
         <script
             is:inline
             data-goatcounter="https://seriously-delicious.goatcounter.com/count"
+            data-goatcounter-settings='{"no_onload": true}'
             async
             src="//gc.zgo.at/count.js"
-            data-astro-rerun
         ></script>
+
+        <script>
+            document.addEventListener('astro:page-load', () => {
+                // Function to trigger GoatCounter visit once the script is loaded
+                const trackView = () => {
+                    if (window.goatcounter && typeof window.goatcounter.count === 'function') {
+                        window.goatcounter.count({
+                            path: location.pathname + location.search,
+                        });
+                    } else {
+                        // Retry in 100ms if count.js is still downloading asynchronously
+                        setTimeout(trackView, 100);
+                    }
+                };
+
+                trackView();
+            });
+        </script>
     </head>
     <body class="bg-main text-main">
         <div class="flex min-h-screen flex-col px-4 md:px-8">
